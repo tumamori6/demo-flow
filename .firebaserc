@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "test-flow-6d7bb": {
+      "hosting": {
+        "test-flow": [
+          "test-flow-6d7bb"
+        ]
+      }
+    }
+  }
+}
