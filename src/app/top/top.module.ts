@@ -6,13 +6,15 @@ import { TopComponent } from './top.component';
 import { MainVisualComponent } from '../main-visual/main-visual.component';
 import { TrendingComponent } from '../trending/trending.component';
 import { HappeningNowComponent } from '../happening-now/happening-now.component';
+import { MatCardModule } from '@angular/material/card';
 
 
 @NgModule({
   declarations: [TopComponent, MainVisualComponent, TrendingComponent, HappeningNowComponent],
   imports: [
     CommonModule,
-    TopRoutingModule
+    TopRoutingModule,
+    MatCardModule
   ]
 })
 export class TopModule { }

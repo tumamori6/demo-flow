@@ -1,7 +1,13 @@
 <h2 class="heading">TRENDING</h2>
 
-<p>
-  xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx<br>
-  xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx<br>
-  xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx<br>
-</p>
+<div class="grid">
+  <mat-card *ngFor="let item of items">
+    <img src="https://placehold.it/400x200" alt="placeholder">
+    <h3>{{item.title}}</h3>
+    <p>
+      xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx<br>
+      xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx<br>
+      xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx<br>
+    </p>
+  </mat-card>
+</div>

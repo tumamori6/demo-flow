@@ -7,6 +7,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TrendingComponent implements OnInit {
 
+
+  items = [
+    {
+      title: 'item 1',
+    },
+    {
+      title: 'item 2',
+    },
+    {
+      title: 'item 3',
+    }
+  ];
+
   constructor() { }
 
   ngOnInit(): void {
