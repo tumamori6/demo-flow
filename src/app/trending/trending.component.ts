@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ArticleService } from '../services/article.service';
 
 @Component({
   selector: 'app-trending',
@@ -7,20 +8,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TrendingComponent implements OnInit {
 
+  items = this.articleService.items;
 
-  items = [
-    {
-      title: 'item 1',
-    },
-    {
-      title: 'item 2',
-    },
-    {
-      title: 'item 3',
-    }
-  ];
-
-  constructor() { }
+  constructor(
+    private articleService: ArticleService
+  ) { }
 
   ngOnInit(): void {
   }
